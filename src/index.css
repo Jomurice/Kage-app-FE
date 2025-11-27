@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+
+@import "tailwindcss";
+
+@utility container {
+  margin-inline: auto;
+  /* padding-inline: 1rem;
+  padding-block: 2rem;
+  width: 100%;
+
+    @media (min-width: 48rem) {
+        padding-inline: 4.5rem;
+        padding-block: 3rem;
+    } */
+}
+
+@layer base {
+  .btn-hover {
+    @apply rounded-xl hover:bg-gray-500 py-1 px-2 transition duration-500;
+  }
+}
