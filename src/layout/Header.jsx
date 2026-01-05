@@ -4,7 +4,7 @@ const Header = () => {
             <nav className="top-0 fixed w-full  hidden md:flex justify-between items-center py-6 px-6 border-b border-gray-700">
                 
                 <div>
-                    <a href="#">Kage</a>
+                    <a href="#" className="font-bold">Kage</a>
                 </div>
 
 

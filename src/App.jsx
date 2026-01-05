@@ -1,19 +1,27 @@
-import Header from './component/layout/Header'
-import MangaCard from './component/ui/MangaCard'
+// import Header from './component/layout/Header'
+// import LastUpdate from './component/layout/LastUpdate'
+// import MangaCardHorizontal from './component/ui/MangaCardHorizontal'
+// import MangaCard from './component/ui/MangaCardVertical'
+// import MangaDetailPage from './page/MangaDetailPage'
 
+import { Toaster } from 'sonner'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import NotFoundPage from './pages/NotFoundPage'
+import HomePage from './pages/HomePage'
 function App() {
-  
+
 
   return (
     <>
-  <MangaCard /> 
+    <Toaster  position="top-right"/>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<HomePage/>} />
 
 
-
-    {/* <div className="bg-zinc-900 text-gray-300 min-h-screen">
-      <Header /> 
-    </div> */}
-      
+          <Route path="*" element = {<NotFoundPage/>} />
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }
